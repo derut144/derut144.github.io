@@ -6,4 +6,4 @@ _site/
 
 # bundler
 .bundle/
-vender/
+vendor/
