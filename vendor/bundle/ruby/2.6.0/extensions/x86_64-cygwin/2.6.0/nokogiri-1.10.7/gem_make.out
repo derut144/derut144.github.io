@@ -1,0 +1,520 @@
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.7/ext/nokogiri
+/usr/bin/ruby.exe -I /usr/share/rubygems -r ./siteconf20191220-62081-kaexlq.rb extconf.rb --use-system-libraries
+checking if the C compiler accepts ... yes
+Building nokogiri using system libraries.
+checking for xmlParseDoc() in libxml/parser.h... yes
+checking for xsltParseStylesheetDoc() in libxslt/xslt.h... yes
+checking for exsltFuncRegister() in libexslt/exslt.h... yes
+checking for xmlHasFeature()... yes
+checking for xmlFirstElementChild()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetParserStructuredErrors()... yes
+checking for xmlRelaxNGSetValidStructuredErrors()... yes
+checking for xmlSchemaSetValidStructuredErrors()... yes
+checking for xmlSchemaSetParserStructuredErrors()... yes
+creating Makefile
+
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.7/ext/nokogiri
+make "DESTDIR=" clean
+rm -f 
+rm -f nokogiri.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.7/ext/nokogiri
+make "DESTDIR="
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o html_document.o -c html_document.c
+In file included from ./html_document.h:4:0,
+                 from html_document.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./html_document.h:4,
+                 from html_document.c:1:
+html_document.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+html_document.c:16:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "0*", &rest);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o html_element_description.o -c html_element_description.c
+In file included from ./html_element_description.h:4:0,
+                 from html_element_description.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o html_entity_lookup.o -c html_entity_lookup.c
+In file included from ./html_entity_lookup.h:4:0,
+                 from html_entity_lookup.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o html_sax_parser_context.o -c html_sax_parser_context.c
+In file included from ./html_sax_parser_context.h:4:0,
+                 from html_sax_parser_context.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o html_sax_push_parser.o -c html_sax_push_parser.c
+In file included from ./html_sax_push_parser.h:4:0,
+                 from html_sax_push_parser.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o nokogiri.o -c nokogiri.c
+In file included from nokogiri.c:1:0:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_attr.o -c xml_attr.c
+In file included from ./xml_attr.h:4:0,
+                 from xml_attr.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_attr.h:4,
+                 from xml_attr.c:1:
+xml_attr.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_attr.c:61:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "2*", &document, &name, &rest);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_attribute_decl.o -c xml_attribute_decl.c
+In file included from ./xml_attribute_decl.h:4:0,
+                 from xml_attribute_decl.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_cdata.o -c xml_cdata.c
+In file included from ./xml_cdata.h:4:0,
+                 from xml_cdata.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_cdata.h:4,
+                 from xml_cdata.c:1:
+xml_cdata.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_cdata.c:23:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "2*", &doc, &content, &rest);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_comment.o -c xml_comment.c
+In file included from ./xml_comment.h:4:0,
+                 from xml_comment.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_comment.h:4,
+                 from xml_comment.c:1:
+xml_comment.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_comment.c:21:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "2*", &document, &content, &rest);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_document.o -c xml_document.c
+In file included from ./xml_document.h:4:0,
+                 from xml_document.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_document.h:4,
+                 from xml_document.c:1:
+xml_document.c: 関数 ‘duplicate_document’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_document.c:330:6: 備考: in expansion of macro ‘rb_scan_args’
+   if(rb_scan_args(argc, argv, "01", &level) == 0)
+      ^~~~~~~~~~~~
+xml_document.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_document.c:357:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "0*", &rest);
+   ^~~~~~~~~~~~
+xml_document.c: 関数 ‘create_entity’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_document.c:436:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "14", &name, &type, &external_id, &system_id,
+   ^~~~~~~~~~~~
+xml_document.c: 関数 ‘canonicalize’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_document.c:511:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "03", &mode, &incl_ns, &with_comments);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_document_fragment.o -c xml_document_fragment.c
+In file included from ./xml_document_fragment.h:4:0,
+                 from xml_document_fragment.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_document_fragment.h:4,
+                 from xml_document_fragment.c:1:
+xml_document_fragment.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_document_fragment.c:17:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "1*", &document, &rest);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_dtd.o -c xml_dtd.c
+In file included from ./xml_dtd.h:4:0,
+                 from xml_dtd.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_element_content.o -c xml_element_content.c
+In file included from ./xml_element_content.h:4:0,
+                 from xml_element_content.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_element_decl.o -c xml_element_decl.c
+In file included from ./xml_element_decl.h:4:0,
+                 from xml_element_decl.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_encoding_handler.o -c xml_encoding_handler.c
+In file included from ./xml_encoding_handler.h:4:0,
+                 from xml_encoding_handler.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_entity_decl.o -c xml_entity_decl.c
+In file included from ./xml_entity_decl.h:4:0,
+                 from xml_entity_decl.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_entity_reference.o -c xml_entity_reference.c
+In file included from ./xml_entity_reference.h:4:0,
+                 from xml_entity_reference.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_entity_reference.h:4,
+                 from xml_entity_reference.c:1:
+xml_entity_reference.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_entity_reference.c:18:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "2*", &document, &name, &rest);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_io.o -c xml_io.c
+In file included from ./xml_io.h:4:0,
+                 from xml_io.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_libxml2_hacks.o -c xml_libxml2_hacks.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_namespace.o -c xml_namespace.c
+In file included from ./xml_namespace.h:4:0,
+                 from xml_namespace.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_node.o -c xml_node.c
+In file included from ./xml_node.h:4:0,
+                 from xml_node.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+xml_node.c: 関数 ‘reparent_node_with’ 内:
+xml_node.c:304:15: 警告: passing argument 1 of ‘xmlFree’ discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]
+       xmlFree(reparentee->ns->prefix);
+               ^~~~~~~~~~
+xml_node.c:304:15: 備考: expected ‘void *’ but argument is of type ‘const xmlChar * {aka const unsigned char *}’
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_node.h:4,
+                 from xml_node.c:1:
+xml_node.c: 関数 ‘duplicate_node’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_node.c:550:12: 備考: in expansion of macro ‘rb_scan_args’
+   n_args = rb_scan_args(argc, argv, "02", &r_level, &r_new_parent_doc);
+            ^~~~~~~~~~~~
+xml_node.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_node.c:1393:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "2*", &name, &document, &rest);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_node_set.o -c xml_node_set.c
+In file included from ./xml_node_set.h:4:0,
+                 from xml_node_set.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_node_set.h:4,
+                 from xml_node_set.c:1:
+xml_node_set.c: 関数 ‘slice’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_node_set.c:294:5: 備考: in expansion of macro ‘rb_scan_args’
+     rb_scan_args(argc, argv, "11", NULL, NULL);
+     ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_processing_instruction.o -c xml_processing_instruction.c
+In file included from ./xml_processing_instruction.h:4:0,
+                 from xml_processing_instruction.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_processing_instruction.h:4,
+                 from xml_processing_instruction.c:1:
+xml_processing_instruction.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_processing_instruction.c:20:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "3*", &document, &name, &content, &rest);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_reader.o -c xml_reader.c
+In file included from ./xml_reader.h:4:0,
+                 from xml_reader.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_reader.h:4,
+                 from xml_reader.c:1:
+xml_reader.c: 関数 ‘from_memory’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_reader.c:533:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "13", &rb_buffer, &rb_url, &encoding, &rb_options);
+   ^~~~~~~~~~~~
+xml_reader.c: 関数 ‘from_io’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_reader.c:577:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "13", &rb_io, &rb_url, &encoding, &rb_options);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_relax_ng.o -c xml_relax_ng.c
+In file included from ./xml_relax_ng.h:4:0,
+                 from xml_relax_ng.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_sax_parser.o -c xml_sax_parser.c
+In file included from ./xml_sax_parser.h:4:0,
+                 from xml_sax_parser.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_sax_parser_context.o -c xml_sax_parser_context.c
+In file included from ./xml_sax_parser_context.h:4:0,
+                 from xml_sax_parser_context.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_sax_push_parser.o -c xml_sax_push_parser.c
+In file included from ./xml_sax_push_parser.h:4:0,
+                 from xml_sax_push_parser.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_schema.o -c xml_schema.c
+In file included from ./xml_schema.h:4:0,
+                 from xml_schema.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_syntax_error.o -c xml_syntax_error.c
+In file included from ./xml_syntax_error.h:4:0,
+                 from xml_syntax_error.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_text.o -c xml_text.c
+In file included from ./xml_text.h:4:0,
+                 from xml_text.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_text.h:4,
+                 from xml_text.c:1:
+xml_text.c: 関数 ‘new’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_text.c:18:3: 備考: in expansion of macro ‘rb_scan_args’
+   rb_scan_args(argc, argv, "2*", &string, &document, &rest);
+   ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xml_xpath_context.o -c xml_xpath_context.c
+In file included from ./xml_xpath_context.h:4:0,
+                 from xml_xpath_context.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xml_xpath_context.h:4,
+                 from xml_xpath_context.c:1:
+xml_xpath_context.c: 関数 ‘evaluate’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xml_xpath_context.c:200:6: 備考: in expansion of macro ‘rb_scan_args’
+   if(rb_scan_args(argc, argv, "11", &search_path, &xpath_handler) == 1)
+      ^~~~~~~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -I/usr/include/libxml2 -I/usr/include/libxml2 -I/usr/include/libxml2 -DHAVE_XMLPARSEDOC -DHAVE_XSLTPARSESTYLESHEETDOC -DHAVE_EXSLTFUNCREGISTER -DHAVE_XMLHASFEATURE -DHAVE_XMLFIRSTELEMENTCHILD -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETPARSERSTRUCTUREDERRORS -DHAVE_XMLRELAXNGSETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETVALIDSTRUCTUREDERRORS -DHAVE_XMLSCHEMASETPARSERSTRUCTUREDERRORS -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4    -g -DXP_UNIX -Wall -Wcast-qual -Wwrite-strings -Wmissing-noreturn -Winline     -o xslt_stylesheet.o -c xslt_stylesheet.c
+In file included from ./xslt_stylesheet.h:4:0,
+                 from xslt_stylesheet.c:1:
+./nokogiri.h:13:0: 警告: "_GNU_SOURCE" が再定義されました
+ #define _GNU_SOURCE
+ 
+<コマンドライン>:0:0: 備考: ここが以前の宣言がある位置です
+In file included from /usr/include/ruby-2.6/ruby.h:33:0,
+                 from ./nokogiri.h:33,
+                 from ./xslt_stylesheet.h:4,
+                 from xslt_stylesheet.c:1:
+xslt_stylesheet.c: 関数 ‘transform’ 内:
+/usr/include/ruby-2.6/ruby/ruby.h:2479:48: 警告: cast discards ‘const’ qualifier from pointer target type [-Wcast-qual]
+        (rb_scan_args_verify(fmt, varc), vars), (char *)fmt, varc)
+                                                ^
+/usr/include/ruby-2.6/ruby/ruby.h:2295:9: 備考: in expansion of macro ‘rb_scan_args0’
+         rb_scan_args0(argc,argvp,fmt,\
+         ^~~~~~~~~~~~~
+xslt_stylesheet.c:141:5: 備考: in expansion of macro ‘rb_scan_args’
+     rb_scan_args(argc, argv, "11", &xmldoc, &paramobj);
+     ^~~~~~~~~~~~
+トップレベル:
+xslt_stylesheet.c:112:13: 警告: ‘swallow_superfluous_xml_errors’ defined but not used [-Wunused-function]
+ static void swallow_superfluous_xml_errors(void * userdata, xmlErrorPtr error, ...)
+             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+rm -f nokogiri.so
+gcc -shared -o nokogiri.so html_document.o html_element_description.o html_entity_lookup.o html_sax_parser_context.o html_sax_push_parser.o nokogiri.o xml_attr.o xml_attribute_decl.o xml_cdata.o xml_comment.o xml_document.o xml_document_fragment.o xml_dtd.o xml_element_content.o xml_element_decl.o xml_encoding_handler.o xml_entity_decl.o xml_entity_reference.o xml_io.o xml_libxml2_hacks.o xml_namespace.o xml_node.o xml_node_set.o xml_processing_instruction.o xml_reader.o xml_relax_ng.o xml_sax_parser.o xml_sax_parser_context.o xml_sax_push_parser.o xml_schema.o xml_syntax_error.o xml_text.o xml_xpath_context.o xslt_stylesheet.o -L. -L/usr/lib -L. -fstack-protector-strong    -Wl,--export-all-symbols -Wl,--enable-auto-image-base,--enable-auto-import    -lruby260  -lxml2 -lxslt -lz -llzma -liconv -lm -lxml2 -lexslt -lxslt -lz -llzma -liconv -lm -lgcrypt -lgpg-error -lxml2   
+/usr/bin/ruby ./extconf.rb --clean --disable-static
+Cleaning files only used during build.
+rm -rf /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.7/ports/archives
+
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/nokogiri-1.10.7/ext/nokogiri
+make "DESTDIR=" install
+/usr/bin/mkdir -p . ./.gem.20191220-62081-wtp4qf/nokogiri
+exit > .sitearchdir.-.nokogiri.time
+/usr/bin/install -c -m 0755 nokogiri.so ./.gem.20191220-62081-wtp4qf/nokogiri

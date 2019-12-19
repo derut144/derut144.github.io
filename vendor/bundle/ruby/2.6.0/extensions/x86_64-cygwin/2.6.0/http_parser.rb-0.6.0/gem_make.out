@@ -1,0 +1,21 @@
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/usr/bin/ruby.exe -I /usr/share/rubygems -r ./siteconf20191219-28137-1j47doi.rb extconf.rb
+creating Makefile
+
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+rm -f 
+rm -f ruby_http_parser.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -I/home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser  -o ruby_http_parser.o -c ruby_http_parser.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -I/home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser  -o ryah_http_parser.o -c ryah_http_parser.c
+rm -f ruby_http_parser.so
+gcc -shared -o ruby_http_parser.so ruby_http_parser.o ryah_http_parser.o -L. -L/usr/lib -L. -fstack-protector-strong -Wl,--export-all-symbols -Wl,--enable-auto-image-base,--enable-auto-import    -lruby260   
+
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/bin/mkdir -p . ./.gem.20191219-28137-dmpuvx
+exit > .sitearchdir.time
+/usr/bin/install -c -m 0755 ruby_http_parser.so ./.gem.20191219-28137-dmpuvx

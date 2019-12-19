@@ -1,0 +1,21 @@
+﻿title: No Title
+description: >- # this means to ignore newlines until "baseurl:"
+  test site for jekyll, navigation mainly.
+baseurl: "/"
+url: https://derut144.github.io/
+
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude: ['Gemfile','Gemfile.lock','Rakefile','vendor']
+permalink: /blog/:year-:month-:day-:title.html
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"

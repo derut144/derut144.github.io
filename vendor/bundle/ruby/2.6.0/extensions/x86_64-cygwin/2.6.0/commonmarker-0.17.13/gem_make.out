@@ -1,0 +1,69 @@
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.17.13/ext/commonmarker
+/usr/bin/ruby.exe -I /usr/share/rubygems -r ./siteconf20191219-28137-105my0w.rb extconf.rb
+creating Makefile
+
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR=" clean
+rm -f 
+rm -f commonmarker.so  *.o  *.bak mkmf.log .*.time
+
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR="
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o arena.o -c arena.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o autolink.o -c autolink.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o blocks.o -c blocks.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o buffer.o -c buffer.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o cmark.o -c cmark.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o cmark_ctype.o -c cmark_ctype.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o commonmark.o -c commonmark.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o commonmarker.o -c commonmarker.c
+In file included from houdini.h:9:0,
+                 from commonmarker.c:3:
+config.h:8:0: 警告: "HAVE_STDBOOL_H" が再定義されました
+ #define HAVE_STDBOOL_H
+ 
+In file included from /usr/include/ruby-2.6/ruby/ruby.h:24:0,
+                 from /usr/include/ruby-2.6/ruby.h:33,
+                 from commonmarker.h:9,
+                 from commonmarker.c:1:
+/usr/include/ruby-2.6/ruby/config.h:27:0: 備考: ここが以前の宣言がある位置です
+ #define HAVE_STDBOOL_H 1
+ 
+commonmarker.c: 関数 ‘rb_parse_document’ 内:
+commonmarker.c:270:12: 警告: 変数 ‘options’ が設定されましたが使用されていません [-Wunused-but-set-variable]
+   int len, options;
+            ^~~~~~~
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o core-extensions.o -c core-extensions.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o ext_scanners.o -c ext_scanners.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o footnotes.o -c footnotes.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o houdini_href_e.o -c houdini_href_e.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o houdini_html_e.o -c houdini_html_e.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o houdini_html_u.o -c houdini_html_u.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o html.o -c html.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o inlines.o -c inlines.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o iterator.o -c iterator.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o latex.o -c latex.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o linked_list.o -c linked_list.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o man.o -c man.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o map.o -c map.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o node.o -c node.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o plaintext.o -c plaintext.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o plugin.o -c plugin.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o references.o -c references.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o registry.o -c registry.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o render.o -c render.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o scanners.o -c scanners.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o strikethrough.o -c strikethrough.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o syntax_extension.o -c syntax_extension.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o table.o -c table.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o tagfilter.o -c tagfilter.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o utf8.o -c utf8.c
+gcc -I. -I/usr/include/ruby-2.6 -I/usr/include/ruby-2.6/ruby/backward -I/usr/include/ruby-2.6 -I. -D_XOPEN_SOURCE -D_GNU_SOURCE    -ggdb -O2 -pipe -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -fstack-protector-strong --param=ssp-buffer-size=4   -std=c99  -o xml.o -c xml.c
+rm -f commonmarker.so
+gcc -shared -o commonmarker.so arena.o autolink.o blocks.o buffer.o cmark.o cmark_ctype.o commonmark.o commonmarker.o core-extensions.o ext_scanners.o footnotes.o houdini_href_e.o houdini_html_e.o houdini_html_u.o html.o inlines.o iterator.o latex.o linked_list.o man.o map.o node.o plaintext.o plugin.o references.o registry.o render.o scanners.o strikethrough.o syntax_extension.o table.o tagfilter.o utf8.o xml.o -L. -L/usr/lib -L. -fstack-protector-strong -Wl,--export-all-symbols -Wl,--enable-auto-image-base,--enable-auto-import    -lruby260   
+
+current directory: /home/derut/derut144.github.io/vendor/bundle/ruby/2.6.0/gems/commonmarker-0.17.13/ext/commonmarker
+make "DESTDIR=" install
+/usr/bin/mkdir -p . ./.gem.20191219-28137-1t43wqc/commonmarker
+exit > .sitearchdir.-.commonmarker.time
+/usr/bin/install -c -m 0755 commonmarker.so ./.gem.20191219-28137-1t43wqc/commonmarker
