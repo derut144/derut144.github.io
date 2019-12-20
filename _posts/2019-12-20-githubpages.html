@@ -1,0 +1,264 @@
+---
+title: "Github Pagesを始めた話"
+date: 2019-12-20
+layout: default
+categories: 
+tags: 
+- jekyll
+published: true
+comments: 
+---
+
+<div id="outline-container-org7fade62" class="outline-2">
+<h2 id="org7fade62">github pages + jekyll + org を開始するまで</h2>
+<div class="outline-text-2" id="text-org7fade62">
+<p>
+始まりは終わり。続くとは限らない。
+</p>
+</div>
+
+<div id="outline-container-org2c3c3ec" class="outline-3">
+<h3 id="org2c3c3ec">github へ登録</h3>
+<div class="outline-text-3" id="text-org2c3c3ec">
+<p>
+いいかげん Windows でも <code>git</code> とか <code>ruby</code> とか <code>python</code> とか <code>java</code> とか
+デフォルト or apt的なコマンドで一発で入れられるようにならないものか……。
+</p>
+
+<p>
+いまだに cygwin 使ってるけど cyg-apt もいろいろあったし、
+cygwin だからのエラーもあるし、開発者が cygwin なんて捨ててるし
+（開幕愚痴攻撃）
+</p>
+
+<p>
+<a href="https://github.com/">https://github.com/</a>
+ここからGUIでアカウント登録できる。
+</p>
+
+<p>
+GUIで苦にならないならデスクトップアプリ入れたり
+ブラウザでいいんじゃないかと。
+GUIとか使わないけど。
+Windows の git アプリには git bash とかいうのもついてくるらしい。
+使ってないので知らない。
+</p>
+
+<p>
+ということで cygwin で git コマンドうってる。（ようやく本題）
+</p>
+
+<p>
+<code>~/.netrc</code> に
+</p>
+<div class="org-src-container">
+<pre class="src src-.netrc">machine github.com
+login user@email.com
+password PASSWORD
+</pre>
+</div>
+<p>
+（メアドとパスワードは自分で設定したのに）
+とかやると幸せになれる。
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">$ git config --global user.name "UserName"
+$ git config --global user.email "user@email.com"
+</pre>
+</div>
+
+<p>
+ssh接続するなら
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ ssh-keygen -t rsa -b 4096 -C "user@email.com"
+$ chmod 600 ~/.ssh     ←なってなかったら
+$ chmod 600 ~/.ssh/*
+</pre>
+</div>
+<p>
+<code>~/.ssh/config</code> には
+</p>
+<div class="org-src-container">
+<pre class="src src-config">Host github
+  Hostname github.com
+  User git
+  IdentityFile ~/.ssh/id_rsa
+</pre>
+</div>
+<p>
+とか入れておく。<a href="https://github.com/settings/keys">https://github.com/settings/keys</a> &gt; New SSH key に id_rsa.pub（の中身の文字列）を登録。
+</p>
+
+<p>
+<code>git pull</code> はリモートからローカルにひっぱってきて、 <code>git push</code> はローカルからリモートへ押し出す。
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ git add .
+$ git commit -m "ほげほげ"
+$ git push
+</pre>
+</div>
+<p>
+最初の git add . をやってなくてエラーが出ててちょっと困ってた。だって見てたサイトに書いてないんだもん！（やつあたり）
+</p>
+</div>
+</div>
+
+<div id="outline-container-org805196b" class="outline-3">
+<h3 id="org805196b">jekyll （ジキルだそう）の導入</h3>
+<div class="outline-text-3" id="text-org805196b">
+<p>
+rubyが入ってれば問題はない。
+つまり困るのは Windows だけ。
+Mac とか Ubuntu とか便利なのはあるからおすすめはそっち（使ってないけど）
+</p>
+
+<p>
+gem で jekyllをインスコ
+</p>
+<div class="org-src-container">
+<pre class="src src-sh">$ gem install bundler jekyll
+</pre>
+</div>
+
+<p>
+<a href="http://jekyllrb-ja.github.io/">http://jekyllrb-ja.github.io/</a> の <a href="http://jekyllrb-ja.github.io/docs/step-by-step/01-setup/">step-by-step</a> を見ながら手本通りにやればとりあえずはできた。
+</p>
+
+<p>
+けどテーマを入れてみようとしたらエラー
+<code>An error occured while installing nokogiri (1.10.7)</code> とか何とか……。
+</p>
+
+<p>
+環境は違うけど <a href="https://www.kaoriya.net/blog/2013/03/29/">https://www.kaoriya.net/blog/2013/03/29/</a> こんなのを見つけた。
+ググっても微妙にヒットしないあたりおま環というかWin環というか……。
+</p>
+
+<p>
+Windows のせいだ、きっとそうだ！
+消費税が10%になったのも、安倍のようなアホが長期政権やってるのも、
+なんちゃら Pay をもはやコンビニでしか使ってないのも、
+シャミ子が悪いんだよ。
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">$ gem install nokogiri
+</pre>
+</div>
+<p>
+とかやったときのエラーをよく見たら解決策が書いてあった。
+</p>
+
+<p>
+家電の役に立たないマニュアルと違って、
+コマンドのマニュアルはだいたい解決策がのってるから見ろって言われているのに読む癖をつけてないのが原因でした。
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">$ gem install nokogiri -- --use-system-libraries
+</pre>
+</div>
+<p>
+やれって書いてあった……これで通った、と思ったでしょ？
+でも <code>bundle update</code> でまたつまづくんだこれが。
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">$ bundle config build.nokogiri --use-system-libraries
+</pre>
+</div>
+
+<p>
+そんなこんなで
+<code>[(path)/{user}.github.io./]_config.yml</code> に
+</p>
+<div class="org-src-container">
+<pre class="src src-_config.yml">theme: jekyll-theme-minimal
+</pre>
+</div>
+<p>
+を追加。
+</p>
+
+<p>
+なんやかんやあって
+</p>
+<div class="org-src-container">
+<pre class="src src-_config.yml">title: No Title
+description: &gt;- # this means to ignore newlines until "baseurl:"
+  test site for jekyll, navigation mainly.
+baseurl: "/"
+url: https://user.github.io/
+
+theme: jekyll-theme-minimal
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+exclude: ['Gemfile','Gemfile.lock','Rakefile','vendor'] #エラーが出るのでこうしろって書いてあったけど今回は関係なかった
+permalink: /blog/:year-:month-:day-:title.html          #octpress用にこんなことした
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+</pre>
+</div>
+
+<p>
+で、<a href="https://qiita.com/daddygongon/items/9b7182db29861744fc79#step-by-step">https://qiita.com/daddygongon/items/9b7182db29861744fc79#step-by-step</a>
+ここを見て _layout/defaults.html を変更した。
+</p>
+
+<p>
+Blog以外のコンテンツが思いつかなくてHomeすら書くことがなかったんでHomeにBlogの内容を書くことでお茶を濁した。
+</p>
+</div>
+</div>
+
+<div id="outline-container-org218ad06" class="outline-3">
+<h3 id="org218ad06">org-mode で書いて jekyll したかった。</h3>
+<div class="outline-text-3" id="text-org218ad06">
+<p>
+octpress入れた
+</p>
+
+<div class="org-src-container">
+<pre class="src src-sh">$ git clone git://github.com/imathis/octopress.git octopress
+$ cd octopress
+$ bundle install --path vendor/bundle
+</pre>
+</div>
+
+<pre class="example">
+cd ~/.emacs.d/site-lisp [elisp用のディレクトリ]
+git clone https://github.com/yoshinari-nomura/org-octopress
+git clone https://github.com/yoshinari-nomura/orglue
+git clone https://github.com/kiwanami/emacs-ctable
+</pre>
+<p>
+で <code>~/.emacs.d/init.el</code> にを追加
+</p>
+<div class="org-src-container">
+<pre class="src src-emacs-lisp">(require 'org-octopress)
+(setq org-octopress-directory-top       "~/octopress/source")
+(setq org-octopress-directory-posts     "~/octopress/source/_posts")
+(setq org-octopress-directory-org-top   "~/octopress/source")
+(setq org-octopress-directory-org-posts "~/octopress/source/blog")
+(setq org-octopress-setup-file          "~/org-sty/setupfile.org")
+</pre>
+</div>
+
+<p>
+使うときは <code>M-x org-octpress</code> → title → Date選択 ってやる。
+出力は <code>C-c C-e</code> で "P","x","octpress"（もうちょっと簡単になる気はするけどそれはいつか）
+</p>
+</div>
+</div>
+</div>
