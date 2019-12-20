@@ -1,3 +1,20 @@
 ﻿.current {
   color: green;
 }
+
+
+$base-font-size: 16px;                            // 数字
+// $main-color: #5d9ab2;                             // 色
+$font-family: "consolas", "M PLUS Rounded 1c","Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+$map: (key1: value1, key2: value2, key3: value3); // マップ
+
+body {
+  font: 100% $font-family;
+  // color: $main-color;
+}
+
+blockquote{
+font-style: normal !important;
+font-weight: normal;
+margin: 0 3em;
+}
