@@ -56,12 +56,12 @@ blockquote cite {
 
 h1 {
   position: relative;
-  background: #ffd98a;
+  background: #ffa337;
+  color: grey;
   padding: 2px 5px 2px 25px;
   font-size: 48px;
-  color: #474747;
   border-radius: 0 10px 10px 0;
-
+  line-height: 60px;
 }
 
 h1:before {
@@ -88,11 +88,12 @@ h1:before {
 
 h2 {
   position: relative;
-  background: #f4f4f4;
+  background: #ff6363;
   padding: 2px 5px 2px 20px;
   font-size: 28px;
-  color: #474747;
+  color: white;
   border-radius: 0 10px 10px 0;
+  line-height: 40px;
 }
 
 h2:before {
@@ -120,11 +121,12 @@ h2:before {
 
 h3 {
   position: relative;
-  background: #eff4ff;
+  background: #81a1e4;
   padding: 2px 5px 2px 20px;
   font-size: 24px;
-  color: #474747;
+  color: white;
   border-radius: 0 10px 10px 0;
+  line-height: 40px;
 }
 
 h3:before {
@@ -132,7 +134,7 @@ h3:before {
   font-family: "Font Awesome 5 Free";
   font-size: 20px;
   display: inline-block;
-  line-height: 30px;
+  line-height: 40px;
   position: absolute;
   padding: 0em;
   color: white;
