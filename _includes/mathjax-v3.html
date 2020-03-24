@@ -8,7 +8,15 @@
           color: [],
           colorV2: ['color']
         },
-        packages: {'[+]': ['noerrors']}
+        packages: {'[+]': ['noerrors', 'configMacros']},
+        macros: {
+          C: '{\\mathbb C}',
+          R: '{\\mathbb R}',
+          Q: '{\\mathbb Q}',
+          Z: '{\\mathbb Z}'
+          Id: '{\\mathrm Id}'
+          rel: '{\\mathrm  rel }'
+        }
       },
       chtml: {
         matchFontHeight: false,
@@ -32,7 +40,7 @@
         }
       },
       loader: {
-        load: ['[tex]/noerrors']
+        load: ['[tex]/noerrors','[tex]/configMacros']
       }
     };
 </script>

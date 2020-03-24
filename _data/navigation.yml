@@ -1,2 +1,4 @@
 ﻿- name: Blog
   link: /
+- name: Math
+  link: /math.html

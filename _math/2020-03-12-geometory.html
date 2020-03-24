@@ -1,0 +1,632 @@
+---
+title: "幾何学要論"
+date: 2020-03-12
+layout: post
+categories: 
+tags: 
+published: true
+comments: 
+---
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#orgfb1dfeb">1. はじめに</a></li>
+<li><a href="#org61a5107">2. ホモトピー (Homotopy)</a>
+<ul>
+<li><a href="#orgcaba19c">2.1. 位相空間、連続写像</a></li>
+<li><a href="#orgb4ce1b9">2.2. 写像のホモトピー</a></li>
+<li><a href="#org5cec2cd">2.3. 空間のホモトピー型(Type)</a></li>
+</ul>
+</li>
+<li><a href="#orgb74128f">3. 基本群</a>
+<ul>
+<li><a href="#orgc5bf533">3.1. 基本群の性質</a></li>
+<li><a href="#orgfa74b03">3.2. 基点をとりかえる</a></li>
+<li><a href="#org3d564e6">3.3. 連結写像がひきおこす基本群の間の準同型写像と基本群のホモトピー不変性</a></li>
+<li><a href="#org441e0e2">3.4. $&pi;<sub>1</sub> ( S<sup>1</sup> )$の計算</a></li>
+<li><a href="#orgec3abb4">3.5. Van Kanpen の定理</a></li>
+</ul>
+</li>
+<li><a href="#org9f513e0">4. 被覆空間</a>
+<ul>
+<li><a href="#orgdcdba2c">4.1. 被覆空間の完備</a></li>
+<li><a href="#org1c45148">4.2. 群の作用と軌道空間</a></li>
+<li><a href="#org8cb5cfa">4.3. 群作用と被覆空間</a></li>
+</ul>
+</li>
+<li><a href="#orgfdff701">5. 基本群と被覆空間との関係</a>
+<ul>
+<li><a href="#orgff5320c">5.1. 基本定理の提示</a></li>
+<li><a href="#org450ebc2">5.2. 写像の持ち上げ（リフト）</a></li>
+<li><a href="#org4a246de">5.3. 被覆ホモトピー性質 (covering homotopy porperty)</a></li>
+<li><a href="#orgbd62f7e">5.4. 基本（分類）定理の証明 その一（単射性）</a></li>
+<li><a href="#org63142b1">5.5. 基本（分類）定理の証明 その二（全射性）</a></li>
+<li><a href="#orge3f89a4">5.6. 最後に</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="outline-container-orgfb1dfeb" class="outline-2">
+<h2 id="orgfb1dfeb"><span class="section-number-2">1</span> はじめに</h2>
+<div class="outline-text-2" id="text-1">
+<dl class="org-dl">
+<dt>Geometory (幾何学)とは</dt><dd><span class="underline">空間</span> についての法則を調べる。<br />
+対象 \(X\) : 図形・空間（位相空間）</dd>
+
+<dt>基本問題</dt><dd><p>
+位相空間 \(X\), \(Y\) について、 " \(X\) と \(Y\) は <b>同じ</b> か <b>違う</b> か？" <br />
+→何をもって <b>同じ</b> というのか？ <br />
+同値関係を導入する。
+</p>
+
+<p>
+主に考える同値関係は、「 <b>同相</b> 」、「 <b>ホモトピー同値</b> 」。
+</p></dd>
+</dl>
+
+<p>
+幾何学的対象 \(X\) について、何らかの代数的対象 \(I(X)\) （不変量）を次の命題が成り立つように定める ( \(X \to I(X)\) )、
+\[ X と Y とが *同じ* \Rightarrow I(X) と I(Y) とが同じ。 \]
+</p>
+
+<p>
+この逆が成り立つかどうか; 不変量が完全不変量であるかどうか。
+</p>
+
+<div class="exp">
+<p>
+有限次元ベクトル空間 \(X\) の次元 \(\dim X \in \Z\) （ \(\dim X\) は代数的対象で不変量）について。
+</p>
+
+<p>
+\(X \cong Y\)（線型同値）とは、同型写像が存在することとする。
+</p>
+
+<div class="thm">
+<p>
+\(X \cong Y\) ならば \(\dim X = \dim Y\) 。
+逆もまた真である。
+</p>
+
+</div>
+<p>
+（d.h. \(\dim\) は有限次元ベクトル空間の完全不変量）
+</p>
+
+</div>
+
+
+<div class="exp">
+<p>
+位相空間 \(X\) と基本群 \(\pi_1 (X)\) について
+</p>
+<div class="prop">
+<p>
+\[ X \cong Y （ホモトピー同値） \Rightarrow \pi_1 (X) \cong \pi_1 (Y) （群として同値） \]
+</p>
+
+</div>
+
+<p>
+この逆は不成立。
+しかし、被覆空間(covering space) という特殊な構造をもった位相空間に限定すると、被覆空間はその基本群で完全に記述できる（<a href="#orgfdff701">最終章</a>）
+</p>
+
+</div>
+</div>
+</div>
+
+<div id="outline-container-org61a5107" class="outline-2">
+<h2 id="org61a5107"><span class="section-number-2">2</span> ホモトピー (Homotopy)</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-orgcaba19c" class="outline-3">
+<h3 id="orgcaba19c"><span class="section-number-3">2.1</span> 位相空間、連続写像</h3>
+<div class="outline-text-3" id="text-2-1">
+<p>
+\(X\) が位相空間とは&#x2026;
+\(X\) の部分集合に対して、開集合の定義が与えられていること。
+</p>
+
+<p>
+つまり、
+\(X\) に位相を与える \(\rightleftarrow\)
+\(X\) のどの部分集合が開集合なのかを指定する。
+</p>
+
+<dl class="org-dl">
+<dt>開集合の公理</dt><dd><ol class="org-ol">
+<li>\(\emptyset\), \(X\) は開集合</li>
+<li>\(U_1, U_2\) :開集合 \(\Rightarrow\)  \(U_1 \cap U_2\) も開集合</li>
+<li>\(\{ U_\lambda }\) :開集合の族 \(\Rightarrow\)  \(\cup_\lambda U_\lambda\) も開集合</li>
+</ol></dd>
+</dl>
+
+<p>
+（ちなみに \(\cap_\lambda U_\lambda\) は開とは限らない）
+</p>
+
+<div class="def">
+<p>
+\(V \subset X\) が <span class="underline">閉集合</span> \(\Rightleftarrow\)  \(X \setminus V\) （ \(V\) の補集合） が開集合
+</p>
+
+</div>
+
+<div class="def">
+<p>
+位相空間 \(X,Y\) と写像 \(f: X \to Y\) について
+</p>
+<ol class="org-ol">
+<li>\(a \in X\) において \(f\) は <span class="underline">連続</span> <br />
+\(\Rightleftarrow f(a) \in ^\forall V \subset Y\) : 開集合 <sup><a id="fnr.1" class="footref" href="#fn.1">1</a></sup>
+ならば、 \(a \in ^\exists U \subset X\) s.t. \(f(U) \subset V\)</li>
+<li>任意の点で \(f\) が連続であるとき \(f:X \to Y\) は <span class="underline">連続</span> という。</li>
+</ol>
+
+</div>
+
+<div class="prop">
+<p>
+\(f:X \to Y\) が連続
+\(\Leftrightarrow\) \(\forall V \subset Y\) が開集合ならば \(f^{-1}(V) \subset X\) は開集合
+</p>
+
+</div>
+
+<div class="def">
+<p>
+位相空間 \(X,Y\) の連続写像 \(f:X \to Y\) が <span class="underline">同相写像(homeomorphism)</span> 
+とは次の2つの条件を満たすことである:
+</p>
+<ol class="org-ol">
+<li>\(f\) は全単射</li>
+<li>\(f\) の逆写像 \(f^{-1}\) も連続</li>
+</ol>
+
+
+
+<dl class="org-dl">
+<dt>注</dt><dd>これをいいかえると
+\(\exists 連続写像 g:Y \to X\)
+s.t.
+\(g \circ f = \Id_X, f \circ g = \Id_Y\)</dd>
+</dl>
+
+</div>
+
+<div class="def">
+<p>
+\(X,Y\) が <span class="underline">同相(homeomorphic)</span>
+\(\Rightleftarrow \exists f :X \to Y\) 同相写像 <br />
+このとき \(X \approx Y\), \(X \cong_{C^0} Y\) などと書く。
+</p>
+
+</div>
+
+<p>
+演習
+同相は同値関係であることを示せ。
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgb4ce1b9" class="outline-3">
+<h3 id="orgb4ce1b9"><span class="section-number-3">2.2</span> 写像のホモトピー</h3>
+<div class="outline-text-3" id="text-2-2">
+<div class="def">
+<p>
+位相空間 \(X,Y\) と連続写像 \(f:X \to Y\) に対して,
+\(f\) が <span class="underline">ホモトピック(Homotopic)</span> であるとは, 次の条件を見たす連続写像
+\(H : X \times [0,1] \to Y\)
+が存在することである。
+</p>
+<ol class="org-ol">
+<li>\(H(x,0) = f(x)\)</li>
+<li>\(H(x,1) = g(x)\)</li>
+</ol>
+
+
+
+<dl class="org-dl">
+<dt>注</dt><dd>連続写像 \(H_t : X \to Y\) で \(H_t : x \mapsto H(x,t)\) とすることで
+\(\{H_t\}\) なる連続写像の族により, \(f\) は \(g\) に連続的に変形している。
+\[ H_0 = f , H_1 = g \]
+このとき \(f \simeq g\), \(f \simeq_H g\), \(f \simeq_{H_t} g\) とかき、
+\(H\) （または \(H_t\) ）を <span class="underline">\(f\) と \(g\) をつなぐホモトピー(Homotopy)</span> という</dd>
+</dl>
+
+</div>
+
+<div class="prop">
+<p>
+\(\simeq\) は集合 \(\{f: X \to Y, 連続写像 \}\) に同値関係を定める; d.h
+</p>
+<ol class="org-ol">
+<li>\(f \simeq f\)</li>
+<li>\(f \simeq g \Rightarrow g \simeq f\)</li>
+<li>\(f \simeq g , g \simeq h \Rightarrow f \simeq h\)</li>
+</ol>
+
+</div>
+
+<div class="proof">
+<ol class="org-ol">
+<li>\(H(x,t)= f(x), \forall t \in [0,1]\) とすればよい</li>
+<li>\(H_t : X \to \Y\) が存在するから, \(H'_t = H_{1-t}\) とすればよい</li>
+<li>\(f \simeq_{H_t} g, g \simeq_{G_t} h\) のとき
+\(F_t = H_{2t} ( 0 \leq t \leq 1/2), G_{2t-1} ( 1/2 \leq t \leq 1)\)
+とおけばよい。（ \(F_{1/2} = H_1 = G_0 = g\) で連続的につながっている）</li>
+</ol>
+
+</div>
+
+<div class="def">
+<p>
+\([X,Y] = \{ f :X \to Y, 連続写像 \} / \simeq\)
+＝ \(X\) から \(Y\) への連続写像のホモトピー類の集合
+</p>
+
+<p>
+連続写像 \(f: X \to Y\) に対して,
+\(f\) の定めるホモトピーに関する同値類を \([f]\) と書いて
+写像 \(f\) の <span class="underline">ホモトピー類</span> という。
+</p>
+
+</div>
+
+<p>
+これを少し一般化する。
+\(A \subset X\), 連続写像 \(f,g: X \to Y\) とする。
+仮定 \(f|_A = g|_A\) （d.h. \(f(x)=g(x), \forall x \in A\)）
+このとき
+\(f \simeq g \rel A\)
+とは,
+\(\exists H : X \times [0,1] \to Y\), 連続写像, s.t. \(H_0 = f, H_1 =g, H(a,t)= f(a)= g(a) \forall a \in A\)
+と定義する。
+このとき
+\(f\) と \(g\) は <span class="underline">\(A\) をとめて homotopic</span> という。
+当然ながら
+\(f \simeq g \rel A \Rightarrow f \simeq g\)
+</p>
+</div>
+</div>
+
+<div id="outline-container-org5cec2cd" class="outline-3">
+<h3 id="org5cec2cd"><span class="section-number-3">2.3</span> 空間のホモトピー型(Type)</h3>
+<div class="outline-text-3" id="text-2-3">
+<div class="def">
+<p>
+\(X\) は \(Y\) と <span class="underline">ホモトピー同値(Homotopy equivalent)</span>
+あるいは、\(X\) と \(Y\) は <span class="underline">同じホモトピー型</span> をもつとは次の条件をみたすことをいう:
+\(\exists f : X \to Y, \exists g : Y \to X\), 連続写像, s.t.
+\(g \circ f \simeq \Id_X, f \circ g \simeq \Id_Y\)
+</p>
+
+<p>
+このとき \(X \simeq_{h.e.} Y, X \simeq Y\) とかく
+</p>
+
+<dl class="org-dl">
+<dt>注1</dt><dd>上で \(\simeq\) を \(=\) にしたものが同相の定義</dd>
+<dt>注2</dt><dd>\(X \approx Y \Rightarrow X \simeq_{h.e.} Y\) は正しいが、逆は一般に成り立たない。</dd>
+<dt>注3</dt><dd>\(X \simeq_{h.e.} Y\) が同相のとき、 \(f\) も \(g\) も全単射である必要はない。
+（ \(f,g\) は <span class="underline">ホモトピー同値写像</span> という）
+（ \(g\) は \(f\) の <span class="underline">ホモトピー逆写像</span> とよばれるもの）</dd>
+<dt>注4</dt><dd>\(\simeq_{h.e.}\) は位相空間全体に同値関係を定める。
+\(X\):位相空間に対し、その同値類を <span class="underline">\(X\) の ホモトピー型</span> という</dd>
+</dl>
+
+</div>
+
+<div class="def">
+<p>
+\(A \subset X\) が \(X\) の <span class="underline">deformation retract （変形レトラクト）</span> であるとは
+\(\exists r : X \to A\), 連続写像 s.t.
+</p>
+<ol class="org-ol">
+<li>\(r \circ i = \Id_A\)</li>
+<li>\(i \circ r \simeq \Id_X \rel A\)</li>
+</ol>
+<p>
+但し, \(i : x \in A \mapsto x \in X\), inclusion map である。
+\(r\) を retraction map と呼ぶ。
+</p>
+<dl class="org-dl">
+<dt>注</dt><dd>もちろんこのとき、 \(X \simeq_{h.e.} A \rel A\), \(i, r\) がホモトピー同値写像</dd>
+<dt>注</dt><dd>$\rel A$を仮定しない場合もある。 \(X \simeq A\)</dd>
+</dl>
+
+</div>
+
+<p>
+\(i \circ r \simeq \Id_X \rel A\) とは <br />
+\(\exists H:X \times [0,1] \to X\) <br />
+\(H(x,0) = i \circ r = r(x)\) <br />
+\(H(x,1) = \Id_X =x\) <br />
+\(H(x,t) = x \ \forall x \in A, \forall t \in [0,1]\)
+</p>
+
+<div class="exp">
+<p>
+\(X= \R^n\) ( \(n\) 次元ユークリッド空間),
+\(A= \{ 0 \}\): 原点.<br />
+このとき \(A=\{0\}\) は \(\R^n\) の deformation retract.
+</p>
+
+<ul class="org-ul">
+<li>特に \(\R^n \simeq_{h.e.} \{ 一点 \}\)</li>
+<li>特に \(\forall n,m\) に対して \(\R^n \simeq_{h.e.} \R^m \simeq_{h.e.} \{ 一点 \}\)</li>
+<li>cf. \(n \neq m \Rightarrow \R^n \napprox \R^m\) （同相ではない）</li>
+</ul>
+
+
+<p>
+\(r: x \in X \mapsto 0 \in A\) : 一点への定値写像
+とおくと、
+</p>
+<ol class="org-ol">
+<li>\(r \circ i = \Id_A\)</li>
+<li>\(i \circ r = \Id_{R^n} \rel A\)</li>
+</ol>
+<p>
+を示せばよい。
+1.は明らか。2.については \(i\) と \(r\) をつなぐ homotopy をつくる。
+\(x \in R^n\) をとる。
+\(i \circ r (x) = 0\),
+\(\Id_{\R^n} (x) = x\).
+であるから
+</p>
+
+<p>
+\(H(x,0) = i \circ r (x) = 0\) <br />
+\(H(x,1) = \Id_{\R^n} (x) = x\) <br />
+\(H(0,t) = 0\) <br />
+をみたすように \(H(x,t)= tx\) とおけばよい。
+（ \(H:X \times [0,1] \to \R^n\) は連続）
+</p>
+
+</div>
+
+<div class="def">
+<p>
+位相空間 \(X\) が <span class="underline">可縮(recontractive)</span> <br />
+\(\Leftrightarrow X \simeq_{h.e.} 一点\)
+</p>
+
+</div>
+
+<p>
+\(\R^n\) は可縮である。
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgb74128f" class="outline-2">
+<h2 id="orgb74128f"><span class="section-number-2">3</span> 基本群</h2>
+<div class="outline-text-2" id="text-3">
+<p>
+以下、位相空間 \(X\) は <span class="underline">弧状連結(path-connected)</span> を仮定する;
+\[ \forall x,y \in X, \exists C : [0,1] \to X:連続写像 \ s.t. C(0)=x, C(1)=y\]
+</p>
+</div>
+
+<div id="outline-container-orgc5bf533" class="outline-3">
+<h3 id="orgc5bf533"><span class="section-number-3">3.1</span> 基本群の性質</h3>
+<div class="outline-text-3" id="text-3-1">
+<div class="def">
+<p>
+位相空間 \(X\) と \(x_0,x_1 \in X\) に対し、
+\[ _\Omega(X,x_0,x_1)_ = \{ \omega : [0,1] \to X, 連続写像 | \omega (o) = x_0, \omega (1) = x_1 \} \]
+すなわち、始点 \(x_0\), 終点 \(x_1\) の \(X\) 内の連続な曲線の集合。
+</p>
+
+<p>
+\(x_0 = x_1\) のとき \(\Omega(X,x_0,x_1) = _\Omega (X,x_0)_\) と書き、
+<span class="underline">\(x_0\) を基点(base point)とする loop (located loop)</span> の集合という。
+</p>
+
+<dl class="org-dl">
+<dt>注</dt><dd>\(X\) が弧状連結だから \(\Omega \neq \emptyset\)</dd>
+</dl>
+
+</div>
+
+<div class="def">
+<p>
+<b>変形レトラクト</b>
+</p>
+
+<p>
+\(\omega, \omega' \in \Omega (X,x_0,x_1)\) に対し、 \(\omega \simeq \omega' \rel x_0 \cup x_1\) とは次を満たすことをいう:
+\(\exists \omega_s \in \Omega : s\) について連続, s.t.
+</p>
+\begin{align*}
+\omega_0 (t) &= \omega (t), & \omega_1 (t) &= \omega' (t) && \forall t \in [0,1] （道のりのパラメータ）      \\
+\omega_s (0) &= x_0,        &  \omega_s (1) &= x_1         && \forall s \in [0,1] （ホモトピーのパラメータ） 
+\begin{align*}
+いいかえると,
+$\exists H : [0,1] \times [0,1] \to X$ : 連続写像, s.t.
+\begin{align*}
+H(t,0) &= \omega (t),&  H(t,1) &= \omega' (t) \\
+H(0,s) &= x_0,       &  H(1,s) &= x_1
+\end{align*}       
+
+</div>
+
+<p>
+ここから \(X\) の群をつくりたい。
+だが、始点と終点が異なると積を定義しづらい。
+始点＝終点（ループ）なら積になりそう。
+</p>
+
+<div class="def">
+<p>
+\(\omega_0, \omega_1 \in \Omega(X,x_0)\) に対して
+</p>
+\begin{equation*}
+(\omega_0,\omega_1)(t)=
+\begin{cases}
+  \omega_0 (2t)   & 0 \leq t \leq 1/2 \\ 
+  \omega_1 (2t-1) & 1/2 \leq t \leq 1 
+\end{cases}
+\end{equation*}
+<p>
+（ \(t=1/2\) で \(\omega_0 (1) = \omega_1 (0) = x_0\) だから連続。
+積の順番に従って \(\omega_0\) が先、 \(\omega_1\) が後、と定義している）
+</p>
+
+<p>
+このとき 
+\[ \omega_0 \omega_1 \in \Omega (X,x_0) \]
+が定まるので、これを \(\omega_0\) と \(\omega_1\) の <span class="underline">loop積</span> という。
+</p>
+
+</div>
+
+<div class="prop">
+<p>
+loop積は結合法則が成り立たない
+</p>
+
+</div>
+
+<div class="proof">
+\begin{equation*}
+\begin{split}
+(\omega_0 \omega_1) \omega_2 (t)
+&=
+\begin{cases}
+  \omega_0 \omega_1 (2t) &   0 \leq t \leq 1/2 \\
+  \omega_2 (2t-1)        & 1/2 \leq t \leq 1 
+\end{cases} \\
+&=
+\begin{cases}
+  \omega_0 (4t)          &   0 \leq t \leq 1/4 \\
+  \omega_1 (2 \dot 2t-1) & 1/4 \leq t \leq 1/2 \\
+  \omega_2 (2 t -1 )     & 1/2 \leq t \leq 1
+\end{cases}
+\end{split}
+\end{equation*}
+
+\begin{equation*}
+\begin{split}
+\omega_0 (\omega_1 \omega_2 ) (t)
+&=
+\begin{cases}
+  \omega_0 (2t)              &   0 \leq t \leq 1/2 \\
+  \omega_1 \omega_2 (2t-1)   & 1/2 \leq t \leq  1 
+\end{cases} \\
+&=
+\begin{cases}
+  \omega_0 (2t)            &   0 \leq t \leq 1/2 \\
+  \omega_1 (2 \dot (2t-1)) & 1/2 \leq t \leq 3/4 \\
+  \omega_2 (4 t -3 )       & 3/4 \leq t \leq   1
+\end{cases}
+\end{split}
+\end{equation*}
+<p>
+従って
+\[ (\omega_0 \omega_1) \omega_2 \neq \omega_0 (\omega_1 \omega_2 ) \]
+</p>
+
+</div>
+
+<p>
+通る"時間"は違うけれど"経路"は同じなので、その違いを捨象すればよさそう。
+</p>
+
+<p>
+→ホモトピーで割る; ホモトピーの同値関係で割る＝ホモトピックな loop は同一視する。
+</p>
+
+<div class="def">
+<p>
+\[ _\pi_1(X,x_0)_ := \Omega (X, x_0) / \simeq \rel x_0 \]
+とおき、これを（ \(x_0\) を基点とする） \(X\) の <span class="underline">基本群</span> という。
+</p>
+
+</div>
+
+<dl class="org-dl">
+<dt>積の定義</dt><dd>\([\omega_0],[\omega_1] \in \pi_1 (X,x_0) =  \Omega (X, x_0) / \simeq \rel x_0\) <br />
+\([\omega_0][\omega_1] := [\omega_0 \omega_1]\)</dd>
+</dl>
+</div>
+</div>
+
+
+<div id="outline-container-orgfa74b03" class="outline-3">
+<h3 id="orgfa74b03"><span class="section-number-3">3.2</span> 基点をとりかえる</h3>
+</div>
+
+<div id="outline-container-org3d564e6" class="outline-3">
+<h3 id="org3d564e6"><span class="section-number-3">3.3</span> 連結写像がひきおこす基本群の間の準同型写像と基本群のホモトピー不変性</h3>
+</div>
+
+<div id="outline-container-org441e0e2" class="outline-3">
+<h3 id="org441e0e2"><span class="section-number-3">3.4</span> $&pi;<sub>1</sub> ( S<sup>1</sup> )$の計算</h3>
+</div>
+
+<div id="outline-container-orgec3abb4" class="outline-3">
+<h3 id="orgec3abb4"><span class="section-number-3">3.5</span> Van Kanpen の定理</h3>
+</div>
+</div>
+
+<div id="outline-container-org9f513e0" class="outline-2">
+<h2 id="org9f513e0"><span class="section-number-2">4</span> 被覆空間</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgdcdba2c" class="outline-3">
+<h3 id="orgdcdba2c"><span class="section-number-3">4.1</span> 被覆空間の完備</h3>
+</div>
+
+<div id="outline-container-org1c45148" class="outline-3">
+<h3 id="org1c45148"><span class="section-number-3">4.2</span> 群の作用と軌道空間</h3>
+</div>
+
+<div id="outline-container-org8cb5cfa" class="outline-3">
+<h3 id="org8cb5cfa"><span class="section-number-3">4.3</span> 群作用と被覆空間</h3>
+</div>
+</div>
+
+
+<div id="outline-container-orgfdff701" class="outline-2">
+<h2 id="orgfdff701"><span class="section-number-2">5</span> 基本群と被覆空間との関係</h2>
+<div class="outline-text-2" id="text-5">
+</div>
+<div id="outline-container-orgff5320c" class="outline-3">
+<h3 id="orgff5320c"><span class="section-number-3">5.1</span> 基本定理の提示</h3>
+</div>
+
+<div id="outline-container-org450ebc2" class="outline-3">
+<h3 id="org450ebc2"><span class="section-number-3">5.2</span> 写像の持ち上げ（リフト）</h3>
+</div>
+
+<div id="outline-container-org4a246de" class="outline-3">
+<h3 id="org4a246de"><span class="section-number-3">5.3</span> 被覆ホモトピー性質 (covering homotopy porperty)</h3>
+</div>
+
+<div id="outline-container-orgbd62f7e" class="outline-3">
+<h3 id="orgbd62f7e"><span class="section-number-3">5.4</span> 基本（分類）定理の証明 その一（単射性）</h3>
+</div>
+<div id="outline-container-org63142b1" class="outline-3">
+<h3 id="org63142b1"><span class="section-number-3">5.5</span> 基本（分類）定理の証明 その二（全射性）</h3>
+</div>
+
+<div id="outline-container-orge3f89a4" class="outline-3">
+<h3 id="orge3f89a4"><span class="section-number-3">5.6</span> 最後に</h3>
+</div>
+</div>
+<div id="footnotes">
+<h2 class="footnotes">Footnotes: </h2>
+<div id="text-footnotes">
+
+<div class="footdef"><sup><a id="fn.1" class="footnum" href="#fnr.1">1</a></sup> <div class="footpara"><p class="footpara">要するに \(f(a)\) の任意の開近傍 \(V\)</p></div></div>
+
+
+</div>
+</div>

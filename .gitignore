@@ -7,3 +7,7 @@ _site/
 # bundler
 .bundle/
 vendor/
+
+_math/*.org
+_math/ltximg/
+

@@ -1,0 +1,15 @@
+---
+layout: default
+title: Mathematical Notes
+---
+
+<h1>Mathematical Notes</h1>
+
+  {% for math in site.math %}
+  <div class=post>
+      <h2>
+        <a href="{{ math.url }}">{{ math.title }}</a>
+      </h2>
+      <p> posted {{ math.date | date: "%B %d, %Y" }} </p>
+  </div>
+  {% endfor %}

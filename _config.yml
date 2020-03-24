@@ -11,8 +11,13 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
-exclude: ['Gemfile','Gemfile.lock','Rakefile','vendor']
-permalink: /blog/:year-:month-:day-:title.html
+exclude: ['Gemfile','Gemfile.lock','Rakefile','vendor','_math/*.org']
+permalink: /:categories/:year-:month-:day-:title.html
+
+collections:
+  math: 
+    output: true
+
 
 defaults:
   - scope:

@@ -19,7 +19,7 @@ blockquote {
     font-style: italic;
     color: #464646;
     border: solid 3px #72ccf4;
-     font-style: normal!important;
+    font-style: normal!important;
 }
 
 blockquote:before{
@@ -180,4 +180,95 @@ ul li:before {
   list-style-type: none!important;
   border: solid 2px skyblue;
   border-radius: 5px;
+}
+
+.thm{
+	display:block;
+	font-style: normal;
+	box-sizing: border-box;
+	border: solid 3px #72ccf4;
+	border-radius: 10px 10px 10px 10px;
+&:before{
+	content: "定理 \00a0\00a0";
+	float: left;
+	font-weight: bold;
+}}
+
+.prop{
+	display:block;
+	font-style: normal;
+	box-sizing: border-box;
+	border: solid 3px #72ccf4;
+	border-radius: 10px 10px 10px 10px;
+&:before{
+	content: "命題 \00a0\00a0";
+	float: left;
+	font-weight: bold;
+}}
+
+.lem{
+	display:block;
+	font-style: normal;
+	box-sizing: border-box;
+	border: solid 3px #72ccf4;
+	border-radius: 10px 10px 10px 10px;
+&:before{
+	content: "補題 \00a0\00a0";
+	float: left;
+	font-weight: bold;
+}}
+
+.exp{
+	display:block;
+	font-style: normal;
+&:before{
+	content: "例 \00a0\00a0";
+	float: left;
+	font-weight: bold;
+}}
+
+.def{
+	display:block;
+	font-style: normal;
+	box-sizing: border-box;
+	border: solid 3px #72ccf4;
+	border-radius: 10px 10px 10px 10px;
+&::before{
+	content: "定義 \00a0\00a0";
+	float: left;
+	font-weight: bold;
+}}
+
+.proof{
+	display:block;
+	font-style: normal;
+	position: relative;
+	padding: 2em 2em 2em 2em;
+&::before{
+	position: absolute;
+	margin-top: -2em;
+	content: "証明";
+	float: left;
+	font-weight: bold;
+	z-index:1;
+}
+&::after{
+	content: "証明終わり";
+	right: 10px;
+	position: absolute;
+	font-weight: bold;
+	z-index:1;
+}}
+
+.thm,.prop,.lem,.def,.exp {
+	margin: 1em 0em 1em 2em;
+	padding: 6px;
+}
+
+
+.underline{
+	box-sizing: border-box;
+	font-style: bold;
+	border-radius: 5px 5px 5px 5px;
+	border: solid 2px ;
 }
