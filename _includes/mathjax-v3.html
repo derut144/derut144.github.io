@@ -1,5 +1,5 @@
 <script>
-    MathJax = {
+    window.MathJax = {
       tex: {
         inlineMath: [['$','$'], ['\\(','\\)']],
         processEscapes: true,
@@ -10,12 +10,6 @@
         },
         packages: {'[+]': ['noerrors', 'configMacros']},
         macros: {
-          C: '{\\mathbb C}',
-          R: '{\\mathbb R}',
-          Q: '{\\mathbb Q}',
-          Z: '{\\mathbb Z}'
-          Id: '{\\mathrm Id}'
-          rel: '{\\mathrm  rel }'
         }
       },
       chtml: {
