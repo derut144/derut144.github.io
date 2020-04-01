@@ -265,10 +265,15 @@ ul li:before {
 	padding: 6px;
 }
 
-
 .underline{
 	box-sizing: border-box;
 	font-style: bold;
 	border-radius: 5px 5px 5px 5px;
 	border: solid 2px ;
 }
+
+b {
+	background: pink;
+	border-radius: 5px 5px 5px 5px;
+}
+
