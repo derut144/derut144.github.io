@@ -11,50 +11,50 @@ comments:
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org3f2669a">1. はじめに</a></li>
-<li><a href="#org332916f">2. ホモトピー (Homotopy)</a>
+<li><a href="#orgeb62b53">1. はじめに</a></li>
+<li><a href="#org231ae36">2. ホモトピー (Homotopy)</a>
 <ul>
-<li><a href="#org3cf12e0">2.1. 位相空間、連続写像</a></li>
-<li><a href="#org76df442">2.2. 写像のホモトピー</a></li>
-<li><a href="#org006d6db">2.3. 空間のホモトピー型(Type)</a></li>
+<li><a href="#org880e1d5">2.1. 位相空間、連続写像</a></li>
+<li><a href="#org615795c">2.2. 写像のホモトピー</a></li>
+<li><a href="#org35e17ac">2.3. 空間のホモトピー型(Type)</a></li>
 </ul>
 </li>
-<li><a href="#org4aca709">3. 基本群</a>
+<li><a href="#org612e692">3. 基本群</a>
 <ul>
-<li><a href="#org24e9710">3.1. 基本群の性質</a>
+<li><a href="#org5d03218">3.1. 基本群の性質</a>
 <ul>
-<li><a href="#org2fcca02">3.1.1. 積の定義</a></li>
-<li><a href="#orgbc2a2e4">3.1.2. この積によって群になること</a></li>
+<li><a href="#orga285234">3.1.1. 積の定義</a></li>
+<li><a href="#org1daa3e4">3.1.2. この積によって群になること</a></li>
 </ul>
 </li>
-<li><a href="#orgb2f94c1">3.2. 基点をとりかえる</a></li>
-<li><a href="#orgeaee1fb">3.3. 連結写像がひきおこす基本群の間の準同型写像と基本群のホモトピー不変性</a></li>
-<li><a href="#org1f3f5e0">3.4. \(\pi_1 ( S^1)\)  の計算</a></li>
-<li><a href="#orgb1a2513">3.5. Van Kanpen の定理</a></li>
+<li><a href="#org739b288">3.2. 基点をとりかえる</a></li>
+<li><a href="#org280abb8">3.3. 連結写像がひきおこす基本群の間の準同型写像と基本群のホモトピー不変性</a></li>
+<li><a href="#orgb57fa06">3.4. \(\pi_1 ( S^1)\)  の計算</a></li>
+<li><a href="#orge544e07">3.5. Van Kanpen の定理</a></li>
 </ul>
 </li>
-<li><a href="#orgd243efe">4. 被覆空間</a>
+<li><a href="#org1f3a4f2">4. 被覆空間</a>
 <ul>
-<li><a href="#org0b8e8d5">4.1. 被覆空間の完備</a></li>
-<li><a href="#orge734ef9">4.2. 群の作用と軌道空間</a></li>
-<li><a href="#org4ec1fdb">4.3. 群作用と被覆空間</a></li>
+<li><a href="#org10df557">4.1. 被覆空間の完備</a></li>
+<li><a href="#org5dd0716">4.2. 群の作用と軌道空間</a></li>
+<li><a href="#org4617049">4.3. 群作用と被覆空間</a></li>
 </ul>
 </li>
-<li><a href="#org2b77382">5. 基本群と被覆空間との関係</a>
+<li><a href="#orgd5088f7">5. 基本群と被覆空間との関係</a>
 <ul>
-<li><a href="#org0f58a54">5.1. 基本定理の提示</a></li>
-<li><a href="#orgbd7cfe4">5.2. 写像の持ち上げ（リフト）</a></li>
-<li><a href="#org7f902c4">5.3. 被覆ホモトピー性質 (covering homotopy porperty)</a></li>
-<li><a href="#orgdb73dee">5.4. 基本（分類）定理の証明 その一（単射性）</a></li>
-<li><a href="#org1aaf15e">5.5. 基本（分類）定理の証明 その二（全射性）</a></li>
-<li><a href="#org85da425">5.6. 最後に</a></li>
+<li><a href="#org4c1648a">5.1. 基本定理の提示</a></li>
+<li><a href="#org72aa6df">5.2. 写像の持ち上げ（リフト）</a></li>
+<li><a href="#orgcefe412">5.3. 被覆ホモトピー性質 (covering homotopy porperty)</a></li>
+<li><a href="#org090530e">5.4. 基本（分類）定理の証明 その一（単射性）</a></li>
+<li><a href="#org2e61f19">5.5. 基本（分類）定理の証明 その二（全射性）</a></li>
+<li><a href="#org399b4a2">5.6. 最後に</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3f2669a" class="outline-2">
-<h2 id="org3f2669a"><span class="section-number-2">1</span> はじめに</h2>
+<div id="outline-container-orgeb62b53" class="outline-2">
+<h2 id="orgeb62b53"><span class="section-number-2">1</span> はじめに</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 \( \DeclareMathOperator{\rel}{rel}
@@ -63,8 +63,9 @@ comments:
 \newcommand{\ttomg}{\tilde{\tilde{\omega}}}
 \newcommand{\Z}{\mathbf{Z}}
 \newcommand{\R}{\mathbf{R}}
- \)
+\newcommand{\hesimeq}{\underset{\text{h.e.}}{\simeq}} \)
 </p>
+
 
 <dl class="org-dl">
 <dt>Geometory (幾何学)とは</dt><dd><span class="underline">空間</span> についての法則を調べる。<br />
@@ -126,19 +127,19 @@ comments:
 
 <p>
 この逆は不成立。
-しかし、被覆空間(covering space) という特殊な構造をもった位相空間に限定すると、被覆空間はその基本群で完全に記述できる（<a href="#org2b77382">最終章</a>）
+しかし、被覆空間(covering space) という特殊な構造をもった位相空間に限定すると、被覆空間はその基本群で完全に記述できる（<a href="#orgd5088f7">最終章</a>）
 </p>
 
 </div>
 </div>
 </div>
 
-<div id="outline-container-org332916f" class="outline-2">
-<h2 id="org332916f"><span class="section-number-2">2</span> ホモトピー (Homotopy)</h2>
+<div id="outline-container-org231ae36" class="outline-2">
+<h2 id="org231ae36"><span class="section-number-2">2</span> ホモトピー (Homotopy)</h2>
 <div class="outline-text-2" id="text-2">
 </div>
-<div id="outline-container-org3cf12e0" class="outline-3">
-<h3 id="org3cf12e0"><span class="section-number-3">2.1</span> 位相空間、連続写像</h3>
+<div id="outline-container-org880e1d5" class="outline-3">
+<h3 id="org880e1d5"><span class="section-number-3">2.1</span> 位相空間、連続写像</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 \(X\) が位相空間とは&#x2026;
@@ -155,12 +156,12 @@ comments:
 <dt>開集合の公理</dt><dd><ol class="org-ol">
 <li>\(\emptyset\), \(X\) は開集合</li>
 <li>\(U_1, U_2\) :開集合 \(\Rightarrow\)  \(U_1 \cap U_2\) も開集合</li>
-<li>\(\{ U_{\lambda} \}\) :開集合の族 \(\Rightarrow\)  \(\cup_\lambda U_\lambda\) も開集合</li>
+<li>\(\{ U_{\lambda} \}\) :開集合の族 \(\Rightarrow\)  \(\bigcup_\lambda U_\lambda\) も開集合</li>
 </ol></dd>
 </dl>
 
 <p>
-（ちなみに \(\cap_\lambda U_\lambda\) は開とは限らない）
+（ちなみに \(\bigcap_\lambda U_\lambda\) は開とは限らない）
 </p>
 
 <div class="def">
@@ -216,7 +217,7 @@ s.t.
 <p>
 \(X,Y\) が <span class="underline">同相(homeomorphic)</span>
 \(\Leftrightarrow \exists f :X \to Y\) 同相写像 <br />
-このとき \(X \approx Y\), \(X \cong_{C^0} Y\) などと書く。
+このとき \(X \approx Y\), \(X \underset{C^0}{\cong} Y\) などと書く。
 </p>
 
 </div>
@@ -228,8 +229,8 @@ s.t.
 </div>
 </div>
 
-<div id="outline-container-org76df442" class="outline-3">
-<h3 id="org76df442"><span class="section-number-3">2.2</span> 写像のホモトピー</h3>
+<div id="outline-container-org615795c" class="outline-3">
+<h3 id="org615795c"><span class="section-number-3">2.2</span> 写像のホモトピー</h3>
 <div class="outline-text-3" id="text-2-2">
 <div class="def">
 <p>
@@ -249,7 +250,7 @@ s.t.
 <dt>注</dt><dd>連続写像 \(H_t : X \to Y\) で \(H_t : x \mapsto H(x,t)\) とすることで
 \(\{H_t\}\) なる連続写像の族により, \(f\) は \(g\) に連続的に変形している。
 \[ H_0 = f , H_1 = g \]
-このとき \(f \simeq g\), \(f \simeq_H g\), \(f \simeq_{H_t} g\) とかき、
+このとき \(f \simeq g\), \(f \underset{H}{\simeq} g\), \(f \underset{H_t}{\simeq} g\) とかき、
 \(H\) （または \(H_t\) ）を <span class="underline">\(f\) と \(g\) をつなぐホモトピー(Homotopy)</span> という</dd>
 </dl>
 
@@ -271,7 +272,7 @@ s.t.
 <ol class="org-ol">
 <li>\(H(x,t)= f(x), \forall t \in [0,1]\) とすればよい</li>
 <li>\(H_t : X \to Y\) が存在するから, \(H'_t = H_{1-t}\) とすればよい</li>
-<li>\(f \simeq_{H_t} g, g \simeq_{G_t} h\) のとき
+<li>\(f \underset{H_t}{\simeq} g, g \underset{G_t}{\simeq} h\) のとき
 \(F_t = H_{2t} ( 0 \leq t \leq 1/2), G_{2t-1} ( 1/2 \leq t \leq 1)\)
 とおけばよい。（ \(F_{1/2} = H_1 = G_0 = g\) で連続的につながっている）</li>
 </ol>
@@ -309,8 +310,8 @@ s.t.
 </div>
 </div>
 
-<div id="outline-container-org006d6db" class="outline-3">
-<h3 id="org006d6db"><span class="section-number-3">2.3</span> 空間のホモトピー型(Type)</h3>
+<div id="outline-container-org35e17ac" class="outline-3">
+<h3 id="org35e17ac"><span class="section-number-3">2.3</span> 空間のホモトピー型(Type)</h3>
 <div class="outline-text-3" id="text-2-3">
 <div class="def">
 <p>
@@ -321,16 +322,16 @@ s.t.
 </p>
 
 <p>
-このとき \(X \simeq_{h.e.} Y, X \simeq Y\) とかく
+このとき \(X \hesimeq Y, X \simeq Y\) とかく
 </p>
 
 <dl class="org-dl">
 <dt>注1</dt><dd>上で \(\simeq\) を \(=\) にしたものが同相の定義</dd>
-<dt>注2</dt><dd>\(X \approx Y \Rightarrow X \simeq_{h.e.} Y\) は正しいが、逆は一般に成り立たない。</dd>
-<dt>注3</dt><dd>\(X \simeq_{h.e.} Y\) が同相のとき、 \(f\) も \(g\) も全単射である必要はない。
+<dt>注2</dt><dd>\(X \approx Y \Rightarrow X \hesimeq Y\) は正しいが、逆は一般に成り立たない。</dd>
+<dt>注3</dt><dd>\(X \hesimeq Y\) が同相のとき、 \(f\) も \(g\) も全単射である必要はない。
 （ \(f,g\) は <span class="underline">ホモトピー同値写像</span> という）
 （ \(g\) は \(f\) の <span class="underline">ホモトピー逆写像</span> とよばれるもの）</dd>
-<dt>注4</dt><dd>\(\simeq_{h.e.}\) は位相空間全体に同値関係を定める。
+<dt>注4</dt><dd>\(\hesimeq\) は位相空間全体に同値関係を定める。
 \(X\):位相空間に対し、その同値類を <span class="underline">\(X\) の ホモトピー型</span> という</dd>
 </dl>
 
@@ -350,7 +351,7 @@ s.t.
 \(r\) を retraction map と呼ぶ。
 </p>
 <dl class="org-dl">
-<dt>注</dt><dd>もちろんこのとき、 \(X \simeq_{h.e.} A \rel A\), \(i, r\) がホモトピー同値写像</dd>
+<dt>注</dt><dd>もちろんこのとき、 \(X \hesimeq A \rel A\), \(i, r\) がホモトピー同値写像</dd>
 <dt>注</dt><dd>$\rel A$を仮定しない場合もある。 \(X \simeq A\)</dd>
 </dl>
 
@@ -372,8 +373,8 @@ s.t.
 </p>
 
 <ul class="org-ul">
-<li>特に \(\R^n \simeq_{h.e.} \{ 一点 \}\)</li>
-<li>特に \(\forall n,m\) に対して \(\R^n \simeq_{h.e.} \R^m \simeq_{h.e.} \{ 一点 \}\)</li>
+<li>特に \(\R^n \hesimeq \{ 一点 \}\)</li>
+<li>特に \(\forall n,m\) に対して \(\R^n \hesimeq \R^m \hesimeq \{ 一点 \}\)</li>
 <li>cf. \(n \neq m \Rightarrow \R^n \not\approx \R^m\) （同相ではない）</li>
 </ul>
 
@@ -408,7 +409,7 @@ s.t.
 <div class="def">
 <p>
 位相空間 \(X\) が <span class="underline">可縮(recontractive)</span> <br />
-\(\Leftrightarrow X \simeq_{h.e.} 一点\)
+\(\Leftrightarrow X \hesimeq 一点\)
 </p>
 
 </div>
@@ -420,8 +421,8 @@ s.t.
 </div>
 </div>
 
-<div id="outline-container-org4aca709" class="outline-2">
-<h2 id="org4aca709"><span class="section-number-2">3</span> 基本群</h2>
+<div id="outline-container-org612e692" class="outline-2">
+<h2 id="org612e692"><span class="section-number-2">3</span> 基本群</h2>
 <div class="outline-text-2" id="text-3">
 <p>
 以下、位相空間 \(X\) は <span class="underline">弧状連結(path-connected)</span> を仮定する;
@@ -429,8 +430,8 @@ s.t.
 </p>
 </div>
 
-<div id="outline-container-org24e9710" class="outline-3">
-<h3 id="org24e9710"><span class="section-number-3">3.1</span> 基本群の性質</h3>
+<div id="outline-container-org5d03218" class="outline-3">
+<h3 id="org5d03218"><span class="section-number-3">3.1</span> 基本群の性質</h3>
 <div class="outline-text-3" id="text-3-1">
 <div class="def">
 <p>
@@ -572,8 +573,8 @@ loop積は結合法則が成り立たない
 \( \newcommand{\PI}{\pi_1 (X,x_0)} \)
 </p>
 </div>
-<div id="outline-container-org2fcca02" class="outline-4">
-<h4 id="org2fcca02"><span class="section-number-4">3.1.1</span> 積の定義</h4>
+<div id="outline-container-orga285234" class="outline-4">
+<h4 id="orga285234"><span class="section-number-4">3.1.1</span> 積の定義</h4>
 <div class="outline-text-4" id="text-3-1-1">
 <p>
 \([\omega_0],[\omega_1] \in \pi_1 (X,x_0) =  \Omega (X, x_0) / \simeq \rel x_0\) <br />
@@ -663,8 +664,8 @@ loop積は結合法則が成り立たない
 </div>
 </div>
 
-<div id="outline-container-orgbc2a2e4" class="outline-4">
-<h4 id="orgbc2a2e4"><span class="section-number-4">3.1.2</span> この積によって群になること</h4>
+<div id="outline-container-org1daa3e4" class="outline-4">
+<h4 id="org1daa3e4"><span class="section-number-4">3.1.2</span> この積によって群になること</h4>
 <div class="outline-text-4" id="text-3-1-2">
 <p>
 (1)単位元、 (2)結合法則、(3)逆元
@@ -672,7 +673,7 @@ loop積は結合法則が成り立たない
 </div>
 
 <ol class="org-ol">
-<li><a id="org6ad37ce"></a>単位元<br />
+<li><a id="orga29ced5"></a>単位元<br />
 <div class="outline-text-5" id="text-3-1-2-1">
 <p>
 \(e_{x_0} : t \in [0,1] \mapsto x_0 \in X\) : 定値写像
@@ -798,7 +799,7 @@ H(t,s) =
 </div>
 </li>
 
-<li><a id="orgd76b7e4"></a>結合法則; \(\forall [a],[b],[c] \in \PI, \ ([a][b])[c] = [a]([b][c])\)<br />
+<li><a id="orga80dd08"></a>結合法則; \(\forall [a],[b],[c] \in \PI, \ ([a][b])[c] = [a]([b][c])\)<br />
 <div class="outline-text-5" id="text-3-1-2-2">
 <div class="proof">
 <p>
@@ -859,7 +860,7 @@ a(4t-3) &= 3/4 \leq t \leq 1
 </div>
 </div>
 </li>
-<li><a id="org014708a"></a>逆元の存在; \(\forall [a] \in \PI\), \(\exists [a]^{-1} \in \PI\), s.t.<br />
+<li><a id="orgce0faaf"></a>逆元の存在; \(\forall [a] \in \PI\), \(\exists [a]^{-1} \in \PI\), s.t.<br />
 <div class="outline-text-5" id="text-3-1-2-3">
 <p>
 \[ [a][a]^{-1} = [a]^{-1} [a] = [ e_{x_0} ] = 1 \]
@@ -902,7 +903,7 @@ a(4t-3) &= 3/4 \leq t \leq 1
   &H(0,s) &=& H(1,s) = x_0
 \end{align*}
 <p>
-なので \(H'(t,s) = (1-t,s)\) とおけば
+なので \(H'(t,s) = H(1-t,s)\) とおけば
 </p>
 \begin{align*}
   &H'(t,0) &=& H(1-t,0) &=& a (1-t) = a^{-1} (t) \\
@@ -992,8 +993,8 @@ a (r_4(t,s)) = a \left( \dfrac{2t-s-1}{-s+1} \right)  & s \leq  2t-1
 </ol>
 </div>
 </div>
-<div id="outline-container-orgb2f94c1" class="outline-3">
-<h3 id="orgb2f94c1"><span class="section-number-3">3.2</span> 基点をとりかえる</h3>
+<div id="outline-container-org739b288" class="outline-3">
+<h3 id="org739b288"><span class="section-number-3">3.2</span> 基点をとりかえる</h3>
 <div class="outline-text-3" id="text-3-2">
 <div class="prop">
 <p>
@@ -1018,7 +1019,7 @@ a (r_4(t,s)) = a \left( \dfrac{2t-s-1}{-s+1} \right)  & s \leq  2t-1
 <div class="proof">
 <ul class="org-ul">
 <li><p>
-\([\gamma]\) の定義は well-defined か;
+\([\gamma]_{\#}\) の定義は well-defined か;
 \[ \gamma \simeq \gamma' \rel \{x_0,y_0\} \Rightarrow [ \gamma ]_{\#} = [ \gamma' ]_{\#} \]
 仮定より \(\exists H(t,s)\) s.t.
 </p>
@@ -1094,62 +1095,62 @@ a (r_4(t,s)) = a \left( \dfrac{2t-s-1}{-s+1} \right)  & s \leq  2t-1
 </div>
 </div>
 
-<div id="outline-container-orgeaee1fb" class="outline-3">
-<h3 id="orgeaee1fb"><span class="section-number-3">3.3</span> 連結写像がひきおこす基本群の間の準同型写像と基本群のホモトピー不変性</h3>
+<div id="outline-container-org280abb8" class="outline-3">
+<h3 id="org280abb8"><span class="section-number-3">3.3</span> 連結写像がひきおこす基本群の間の準同型写像と基本群のホモトピー不変性</h3>
 </div>
 
-<div id="outline-container-org1f3f5e0" class="outline-3">
-<h3 id="org1f3f5e0"><span class="section-number-3">3.4</span> \(\pi_1 ( S^1)\)  の計算</h3>
+<div id="outline-container-orgb57fa06" class="outline-3">
+<h3 id="orgb57fa06"><span class="section-number-3">3.4</span> \(\pi_1 ( S^1)\)  の計算</h3>
 </div>
 
-<div id="outline-container-orgb1a2513" class="outline-3">
-<h3 id="orgb1a2513"><span class="section-number-3">3.5</span> Van Kanpen の定理</h3>
+<div id="outline-container-orge544e07" class="outline-3">
+<h3 id="orge544e07"><span class="section-number-3">3.5</span> Van Kanpen の定理</h3>
 </div>
 </div>
 
-<div id="outline-container-orgd243efe" class="outline-2">
-<h2 id="orgd243efe"><span class="section-number-2">4</span> 被覆空間</h2>
+<div id="outline-container-org1f3a4f2" class="outline-2">
+<h2 id="org1f3a4f2"><span class="section-number-2">4</span> 被覆空間</h2>
 <div class="outline-text-2" id="text-4">
 </div>
-<div id="outline-container-org0b8e8d5" class="outline-3">
-<h3 id="org0b8e8d5"><span class="section-number-3">4.1</span> 被覆空間の完備</h3>
+<div id="outline-container-org10df557" class="outline-3">
+<h3 id="org10df557"><span class="section-number-3">4.1</span> 被覆空間の完備</h3>
 </div>
 
-<div id="outline-container-orge734ef9" class="outline-3">
-<h3 id="orge734ef9"><span class="section-number-3">4.2</span> 群の作用と軌道空間</h3>
+<div id="outline-container-org5dd0716" class="outline-3">
+<h3 id="org5dd0716"><span class="section-number-3">4.2</span> 群の作用と軌道空間</h3>
 </div>
 
-<div id="outline-container-org4ec1fdb" class="outline-3">
-<h3 id="org4ec1fdb"><span class="section-number-3">4.3</span> 群作用と被覆空間</h3>
+<div id="outline-container-org4617049" class="outline-3">
+<h3 id="org4617049"><span class="section-number-3">4.3</span> 群作用と被覆空間</h3>
 </div>
 </div>
 
 
-<div id="outline-container-org2b77382" class="outline-2">
-<h2 id="org2b77382"><span class="section-number-2">5</span> 基本群と被覆空間との関係</h2>
+<div id="outline-container-orgd5088f7" class="outline-2">
+<h2 id="orgd5088f7"><span class="section-number-2">5</span> 基本群と被覆空間との関係</h2>
 <div class="outline-text-2" id="text-5">
 </div>
-<div id="outline-container-org0f58a54" class="outline-3">
-<h3 id="org0f58a54"><span class="section-number-3">5.1</span> 基本定理の提示</h3>
+<div id="outline-container-org4c1648a" class="outline-3">
+<h3 id="org4c1648a"><span class="section-number-3">5.1</span> 基本定理の提示</h3>
 </div>
 
-<div id="outline-container-orgbd7cfe4" class="outline-3">
-<h3 id="orgbd7cfe4"><span class="section-number-3">5.2</span> 写像の持ち上げ（リフト）</h3>
+<div id="outline-container-org72aa6df" class="outline-3">
+<h3 id="org72aa6df"><span class="section-number-3">5.2</span> 写像の持ち上げ（リフト）</h3>
 </div>
 
-<div id="outline-container-org7f902c4" class="outline-3">
-<h3 id="org7f902c4"><span class="section-number-3">5.3</span> 被覆ホモトピー性質 (covering homotopy porperty)</h3>
+<div id="outline-container-orgcefe412" class="outline-3">
+<h3 id="orgcefe412"><span class="section-number-3">5.3</span> 被覆ホモトピー性質 (covering homotopy porperty)</h3>
 </div>
 
-<div id="outline-container-orgdb73dee" class="outline-3">
-<h3 id="orgdb73dee"><span class="section-number-3">5.4</span> 基本（分類）定理の証明 その一（単射性）</h3>
+<div id="outline-container-org090530e" class="outline-3">
+<h3 id="org090530e"><span class="section-number-3">5.4</span> 基本（分類）定理の証明 その一（単射性）</h3>
 </div>
-<div id="outline-container-org1aaf15e" class="outline-3">
-<h3 id="org1aaf15e"><span class="section-number-3">5.5</span> 基本（分類）定理の証明 その二（全射性）</h3>
+<div id="outline-container-org2e61f19" class="outline-3">
+<h3 id="org2e61f19"><span class="section-number-3">5.5</span> 基本（分類）定理の証明 その二（全射性）</h3>
 </div>
 
-<div id="outline-container-org85da425" class="outline-3">
-<h3 id="org85da425"><span class="section-number-3">5.6</span> 最後に</h3>
+<div id="outline-container-org399b4a2" class="outline-3">
+<h3 id="org399b4a2"><span class="section-number-3">5.6</span> 最後に</h3>
 </div>
 </div>
 <div id="footnotes">
