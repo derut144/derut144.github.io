@@ -155,23 +155,19 @@ h3:before {
 ul {
   padding: 0.5em 1em 0.5em 2.3em;
   position: relative;
+  list-style: none;
   li {
   line-height: 1.5;
   padding: 1 1;
   margin: 1em 0;
-}
-}
-
-
-ul li:before {
-  
-  font-family: "Font Awesome 5 Free";
-  content: "\f138";/*アイコンの種類*/
-  font-weight: 900;
-  position: absolute;
-  left : 1em;/*左端からのアイコンまでの距離*/
-  color: skyblue;/*アイコン色*/
-}
+    &:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f138";/*アイコンの種類*/
+    font-weight: 900;
+    position: absolute;
+    left : 1em;/*左端からのアイコンまでの距離*/
+    color: skyblue;/*アイコン色*/
+} } }
 
 .post {
   line-height: 0;
